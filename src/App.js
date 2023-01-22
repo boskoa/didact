@@ -1,7 +1,11 @@
-function App() {
+/** @jsxRuntime classic */
+import Didact from "./didact";
+
+/** @jsx Didact.createElement */
+function App({ name }) {
   return (
     <div>
-      <h4>HAI MARK</h4>
+      <h4>HAI {name}</h4>
     </div>
   );
 }
